@@ -12,6 +12,9 @@
   --background-card: #ffffff;
   --opacity-text: rgba(255, 255, 255, 0.6);
   --active-btn: #188ce8;
+  --border-min: #ECECEC;
+  /* --background: #F5F5F5; */
+
 
   --body-font: 'Roboto', sans-serif;
 }
@@ -19,6 +22,7 @@
 body {
   font-family: var(--body-font);
   color: var(--body-text-color);
+  background-color: var(--background);
 }
 
 button {
@@ -74,6 +78,10 @@ ul {
   padding-right: 15px;
 }
 
+img {
+  display: block;
+}
+
 
 
 /* ----------------HEADER [START] ---------------- */
@@ -82,6 +90,7 @@ ul {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  border-bottom: 1px solid var(--border-min);
 }
 
 
@@ -363,6 +372,19 @@ footer {
 /* ----------------FOOTER [FINISH]---------------- */
 
 /* ----------------SECTION-PORTFOLIO [START]---------------- */
+
+.section-portfolio {
+  padding: 94px 0;
+  
+}
+
+.filter-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
 .btn-filter {
   font-family: inherit;
   font-weight: 500;
@@ -373,24 +395,63 @@ footer {
   background-color: var(--background-light);
   border: none;
   border-radius: 4px;
+  padding: 6px 22px;
 }
+
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 
 .btn-filter-active {
   color: var(--text-heading);
   background-color: var(--current);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn-filter:hover,
 .btn-filter:focus {
   color: var(--text-heading);
   background-color: var(--current);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  
+}
+
+.description-wrapper {
+  border: 1px solid var(--border-min);
+  border-top: 0;
+  padding: 20px 24px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+
+
+
+
 
 .portfolio-link {
   text-decoration: none;
 }
 
-.portfolio-link > h3 {
+.portfolio-heading {
   font-weight: 700;
   font-size: 18px;
   line-height: 2.1;
@@ -398,7 +459,7 @@ footer {
   color: var(--body-text-color);
 }
 
-.portfolio-link > span {
+.category {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
