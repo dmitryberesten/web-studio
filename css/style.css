@@ -74,10 +74,16 @@ ul {
   padding-right: 15px;
 }
 
+
+
 /* ----------------HEADER [START] ---------------- */
+
 .header {
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 
 .navigation {
   display: flex;
@@ -192,11 +198,16 @@ ul {
 
 .section-advantages {
   padding: 94px 0;
-  background-color: aquamarine;
+
+  /* width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px; */
 }
 
 .advantages-list {
   display: flex;
+  justify-content: center;
 }
 
 .advantages-list-item:not(:last-child) {
@@ -225,12 +236,16 @@ ul {
 /* ----------------SECTION-ACTIVITY [START]---------------- */
 
 .section-activity {
-  background-color: #188ce8;
   padding-bottom: 94px;
+   /* width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px; */
 }
 
 .section-activity-list {
   display: flex;
+  justify-content: center;
 }
 
 .activity-item:not(:last-child) {
@@ -258,7 +273,7 @@ ul {
 
 .team-list {
   display: flex;
-
+  justify-content: center;
 }
 
 .team-item-heading {
@@ -298,15 +313,27 @@ ul {
 
 footer {
   background-color: var(--background-section);
+  
 }
 
 .footer {
   padding: 60px 0;
+  
 }
 
 .footer-list {
   margin-top: 20px;
+  
 }
+
+/* .footer-container {
+ width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+
 
 .logo-span-footer {
   color: var(--text-heading);
