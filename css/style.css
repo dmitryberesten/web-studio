@@ -47,7 +47,52 @@ address {
   list-style-type: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* ----------------HEADER [START] ---------------- */
+.header {
+  display: flex;
+
+}
+
+.navigation {
+  display: flex;
+}
+
+.menu-list {
+  display: flex;
+  margin: 32px 0 32px 93px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -56,6 +101,7 @@ address {
   letter-spacing: 0.03em;
   color: var(--logo-color);
   text-decoration: none;
+  margin: 24px 0;
 }
 
 .logo-span {
@@ -76,6 +122,12 @@ address {
   color: var(--current);
 }
 
+.contacts {
+  display: flex;
+  margin: 32px 0 32px auto;
+}
+
+
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -83,6 +135,10 @@ address {
   letter-spacing: 0.02em;
   color: var(--contacts-link);
   text-decoration: none;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts-link:hover,
