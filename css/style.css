@@ -12,6 +12,7 @@
   --background-card: #ffffff;
   --opacity-text: rgba(255, 255, 255, 0.6);
   --active-btn: #188ce8;
+  --border-min: #ECECEC;
 
   --body-font: 'Roboto', sans-serif;
 }
@@ -19,6 +20,7 @@
 body {
   font-family: var(--body-font);
   color: var(--body-text-color);
+  background-color: var(--background);
 }
 
 button {
@@ -47,15 +49,74 @@ address {
   list-style-type: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  padding-top: 94px; 
+  padding-bottom: 94px; 
+}
+
 /* ----------------HEADER [START] ---------------- */
+header {
+  border-bottom: 1px solid var(--border-min);
+}
+
+.header {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+}
+
+.menu-list {
+  display: flex;
+  margin: 32px 0 32px 93px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .logo {
+  margin: 24px 0;
+
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--logo-color);
   text-decoration: none;
+  color: var(--logo-color);
 }
 
 .logo-span {
@@ -67,8 +128,8 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 .menu-link:hover,
@@ -76,13 +137,22 @@ address {
   color: var(--current);
 }
 
+.contacts {
+  display: flex;
+  margin: 32px 0 32px auto;
+}
+
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--contacts-link);
   text-decoration: none;
+  color: var(--contacts-link);
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts-link:hover,
@@ -97,6 +167,9 @@ address {
 
 /* ----------------SECTION-HEAD [START]---------------- */
 .section-head {
+  padding: 200px 0;
+
+  text-align: center;
   background-color: var(--background-section);
 }
 
@@ -111,6 +184,9 @@ address {
 }
 
 .btn-order {
+  margin-top: 30px;
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -119,6 +195,8 @@ address {
   color: var(--text-heading);
   background-color: var(--btn-background);
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .btn-order:hover,
@@ -129,12 +207,24 @@ address {
 /* ----------------SECTION-HEAD [FINISH] ---------------- */
 
 /* ----------------SECTION-ADVANTAGES [START]---------------- */
+.advantages-list {
+  display: flex;
+  gap: 30px
+}
+
+.advantages-list-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .item-heading {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
 }
 
 .item-description {
@@ -147,23 +237,58 @@ address {
 /* ----------------SECTION-ADVANTAGES [FINISH]---------------- */
 
 /* ----------------SECTION-ACTIVITY [START]---------------- */
+.section-activity {
+  padding-bottom: 94px;
+}
+
+.section-activity-list {
+  display: flex;
+  justify-content: center;
+}
+
+.activity-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* ----------------SECTION-ACTIVITY [FINISH]---------------- */
+
+/* ----------------SECTION-TEAM [START]---------------- */
+
+.section-team {
+  padding: 94px 0;
+  background-color: var(--background-light);
+}
+
 .heading-text {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
-/* ----------------SECTION-ACTIVITY [FINISH]---------------- */
 
-/* ----------------SECTION-TEAM [START]---------------- */
-.section-team {
-  background-color: var(--background-light);
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-item-heading {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-item {
+  padding-bottom: 30px;
+
   text-align: center;
   background-color: var(--background-card);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item > h3 {
@@ -183,9 +308,17 @@ address {
 /* ----------------SECTION-TEAM [FINISH]---------------- */
 
 /* ----------------FOOTER [START]---------------- */
-
 footer {
   background-color: var(--background-section);
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.address {
+  margin-top: 20px;
+  
 }
 
 .logo-span-footer {
@@ -193,12 +326,12 @@ footer {
 }
 
 .footer-link {
-  color: var(--opacity-text);
-  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  text-decoration: none;
   letter-spacing: 0.03em;
+  color: var(--opacity-text);
 }
 
 .footer-link:hover,
@@ -209,10 +342,26 @@ footer {
 .footer-address {
   color: var(--text-heading);
 }
+
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 /* ----------------FOOTER [FINISH]---------------- */
 
 /* ----------------SECTION-PORTFOLIO [START]---------------- */
+.section-portfolio {
+  padding: 94px;
+}
+
+.filter-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
 .btn-filter {
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -224,22 +373,54 @@ footer {
   border-radius: 4px;
 }
 
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .btn-filter-active {
   color: var(--text-heading);
   background-color: var(--current);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn-filter:hover,
 .btn-filter:focus {
   color: var(--text-heading);
   background-color: var(--current);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.description-wrapper {
+  padding: 20px 24px;
+
+  border: 1px solid var(--border-min);
+  border-top: 0;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .portfolio-link {
   text-decoration: none;
 }
 
-.portfolio-link > h3 {
+.portfolio-heading {
   font-weight: 700;
   font-size: 18px;
   line-height: 2.1;
@@ -247,7 +428,7 @@ footer {
   color: var(--body-text-color);
 }
 
-.portfolio-link > span {
+.category {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
