@@ -350,7 +350,8 @@ footer {
 
 /* ----------------SECTION-PORTFOLIO [START]---------------- */
 .section-portfolio {
-  padding: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter-list {
