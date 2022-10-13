@@ -12,7 +12,11 @@
   --background-card: #ffffff;
   --opacity-text: rgba(255, 255, 255, 0.6);
   --active-btn: #188ce8;
-  --border-min: #ECECEC;
+  --border-min: #ececec;
+  --icon-fill: #212121;
+  --icon-social-light: #AFB1B8;
+  --icon-social-hover: #2196F3;
+  --icon-social-hover-bg: #ffffff;
 
   --body-font: 'Roboto', sans-serif;
 }
@@ -81,8 +85,8 @@ img {
 }
 
 .section {
-  padding-top: 94px; 
-  padding-bottom: 94px; 
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* ----------------HEADER [START] ---------------- */
@@ -207,9 +211,28 @@ header {
 /* ----------------SECTION-HEAD [FINISH] ---------------- */
 
 /* ----------------SECTION-ADVANTAGES [START]---------------- */
+
+.box-advantages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 90px) / 4);
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+
+  background-color: var(--background-light);
+}
+
+.icon-advantages {
+  fill: var(--icon-fill);
+  width: 70px;
+  height: 70px;
+}
+
 .advantages-list {
   display: flex;
-  gap: 30px
+  gap: 30px;
 }
 
 .advantages-list-item {
@@ -224,7 +247,6 @@ header {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
 }
 
 .item-description {
@@ -287,7 +309,8 @@ header {
 
   text-align: center;
   background-color: var(--background-card);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -305,6 +328,42 @@ header {
   letter-spacing: 0.03em;
   color: var(--description);
 }
+
+.social-team {
+  margin-top: 16px;
+}
+
+.social-team-list {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.icon-social-item {
+  fill: var(--icon-social-light);
+  width: 40px;
+  height: 20px;
+}
+
+.icon-social-item:hover {
+  fill: var(--icon-social-hover-bg);
+}
+
+.social-team-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+
+.social-team-link:hover {
+  background-color: var(--icon-social-hover);
+  fill: var(--icon-social-light);
+  border-radius: 50%;
+}
+
+
 /* ----------------SECTION-TEAM [FINISH]---------------- */
 
 /* ----------------FOOTER [START]---------------- */
@@ -318,7 +377,6 @@ footer {
 
 .address {
   margin-top: 20px;
-  
 }
 
 .logo-span-footer {
@@ -381,14 +439,16 @@ footer {
 .btn-filter-active {
   color: var(--text-heading);
   background-color: var(--current);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn-filter:hover,
 .btn-filter:focus {
   color: var(--text-heading);
   background-color: var(--current);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -437,3 +497,19 @@ footer {
   color: var(--description);
 }
 /* ----------------SECTION-PORTFOLIO [FINISH]---------------- */
+
+/* ----------------SVG FILES START----------------------------*/
+.icon-contact {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+}
+
+
