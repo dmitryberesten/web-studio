@@ -164,9 +164,18 @@ header {
   color: var(--current);
 }
 
+.icon-contact {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
 .current {
   color: var(--current);
 }
+
 /* ----------------HEADER [FINISH]---------------- */
 
 /* ----------------SECTION-HEAD [START]---------------- */
@@ -256,6 +265,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--description);
 }
+
 /* ----------------SECTION-ADVANTAGES [FINISH]---------------- */
 
 /* ----------------SECTION-ACTIVITY [START]---------------- */
@@ -271,6 +281,7 @@ header {
 .activity-item:not(:last-child) {
   margin-right: 30px;
 }
+
 /* ----------------SECTION-ACTIVITY [FINISH]---------------- */
 
 /* ----------------SECTION-TEAM [START]---------------- */
@@ -314,14 +325,14 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item > h3 {
+.team-item>h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
 
-.team-item > p {
+.team-item>p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -342,7 +353,7 @@ header {
 
 .icon-social-item {
   fill: var(--icon-social-light);
-  width: 40px;
+  width: 20px;
   height: 20px;
 }
 
@@ -363,8 +374,44 @@ header {
   border-radius: 50%;
 }
 
-
 /* ----------------SECTION-TEAM [FINISH]---------------- */
+
+/* ----------------SECTION-CUSTOMERS [START]--------------------- */
+.section-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 30px;
+
+  list-style-type: none;
+}
+
+.customers-item {
+  flex-basis: calc((100% - 120px) / 6);
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  
+  border: 1px solid var(--icon-social-light);
+  border-radius: 4px;
+  padding: 16px 32px;
+
+}
+
+.icon-customers {
+  fill: var(--icon-social-light);
+  width: 106px;
+  height: 60px;
+}
+
+/* ----------------SECTION-CUSTOMERS [END]--------------------- */
 
 /* ----------------FOOTER [START]---------------- */
 footer {
@@ -404,6 +451,7 @@ footer {
 .footer-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
 /* ----------------FOOTER [FINISH]---------------- */
 
 /* ----------------SECTION-PORTFOLIO [START]---------------- */
@@ -496,20 +544,13 @@ footer {
   letter-spacing: 0.03em;
   color: var(--description);
 }
+
 /* ----------------SECTION-PORTFOLIO [FINISH]---------------- */
 
 /* ----------------SVG FILES START----------------------------*/
-.icon-contact {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  vertical-align: middle;
-  fill: currentColor;
-}
+
 
 .icon-smartphone {
   width: 10px;
   height: 16px;
 }
-
-
