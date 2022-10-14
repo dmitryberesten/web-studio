@@ -184,6 +184,10 @@ header {
 
   text-align: center;
   background-color: var(--background-section);
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: rgba(47, 48, 58, 0.4); */
 }
 
 .section-heading {
