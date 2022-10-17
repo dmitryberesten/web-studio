@@ -172,10 +172,14 @@ header {
   fill: currentColor;
 }
 
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+}
+
 .current {
   color: var(--current);
 }
-
 /* ----------------HEADER [FINISH]---------------- */
 
 /* ----------------SECTION-HEAD [START]---------------- */
@@ -223,11 +227,9 @@ header {
 .btn-order:focus {
   background-color: var(--active-btn);
 }
-
 /* ----------------SECTION-HEAD [FINISH] ---------------- */
 
 /* ----------------SECTION-ADVANTAGES [START]---------------- */
-
 .box-advantages {
   display: flex;
   justify-content: center;
@@ -272,7 +274,6 @@ header {
   letter-spacing: 0.03em;
   color: var(--description);
 }
-
 /* ----------------SECTION-ADVANTAGES [FINISH]---------------- */
 
 /* ----------------SECTION-ACTIVITY [START]---------------- */
@@ -288,11 +289,9 @@ header {
 .activity-item:not(:last-child) {
   margin-right: 30px;
 }
-
 /* ----------------SECTION-ACTIVITY [FINISH]---------------- */
 
 /* ----------------SECTION-TEAM [START]---------------- */
-
 .section-team {
   padding: 94px 0;
   background-color: var(--background-light);
@@ -356,31 +355,34 @@ header {
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
+}
+
+.social-team-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
 }
 
 .icon-social-item {
   fill: var(--icon-social-light);
-  width: 20px;
-  height: 20px;
-}
-
-.icon-social-item:hover {
-  fill: var(--icon-social-hover-bg);
-}
-
-.social-team-link {
-  display: block;
   width: 44px;
   height: 44px;
   padding: 12px;
 }
 
-.social-team-link:hover {
+.social-team-link:hover, .social-team-link:focus {
   background-color: var(--icon-social-hover);
-  fill: var(--icon-social-light);
   border-radius: 50%;
 }
 
+.social-team-link:focus > .icon-social-item {
+  fill: var(--icon-social-hover-bg);
+}
+
+.icon-social-item:hover, .icon-social-item:focus {
+  fill: var(--icon-social-hover-bg);
+}
 /* ----------------SECTION-TEAM [FINISH]---------------- */
 
 /* ----------------SECTION-CUSTOMERS [START]--------------------- */
@@ -408,24 +410,30 @@ header {
 
   border: 1px solid var(--icon-social-light);
   border-radius: 4px;
-  padding: 16px 32px;
-
 }
 
-.customers-link:hover {
+.customers-link:hover, customers-link:focus {
   border-color: var(--current);
 }
 
 .icon-customers {
-  fill: var(--icon-social-light);
   width: 106px;
   height: 60px;
+
+  fill: var(--icon-social-light);
 }
 
-.icon-customers:hover {
+.customers-link:hover > .icon-customers {
+  fill: var(--current);  
+}
+
+.customers-link:focus > .icon-customers {
   fill: var(--current);
 }
 
+.customers-link:focus {
+  outline: 2px solid var(--current);
+}
 /* ----------------SECTION-CUSTOMERS [END]--------------------- */
 
 /* ----------------FOOTER [START]---------------- */
@@ -469,11 +477,11 @@ footer {
 
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social {
   margin-left: 70px;
-  margin-top: 15px;
 }
 
 .footer-heading {
@@ -484,7 +492,6 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-heading);
-
 }
 
 .social-footer-list {
@@ -503,19 +510,15 @@ footer {
   border-radius: 50%;
 }
 
-.social-footer-link:hover{
+.social-footer-link:hover, .social-footer-link:focus{
   background: var(--current); 
 }
-
-
 
 .social-footer-icon {
   width: 20px;
   width: 20px;
   fill: var(--text-heading);
 }
-
-
 
 /* ----------------FOOTER [FINISH]---------------- */
 
@@ -575,13 +578,9 @@ footer {
   margin-bottom: 30px;
 }
 
-.portfolio-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .description-wrapper {
   padding: 20px 24px;
-
+  
   border: 1px solid var(--border-min);
   border-top: 0;
 }
@@ -595,6 +594,7 @@ footer {
 }
 
 .portfolio-link {
+  display: block;
   text-decoration: none;
 }
 
@@ -614,12 +614,12 @@ footer {
   color: var(--description);
 }
 
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* ----------------SECTION-PORTFOLIO [FINISH]---------------- */
 
 /* ----------------SVG FILES START----------------------------*/
 
 
-.icon-smartphone {
-  width: 10px;
-  height: 16px;
-}
