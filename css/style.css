@@ -17,6 +17,7 @@
   --icon-social-light: #AFB1B8;
   --icon-social-hover: #2196F3;
   --icon-social-hover-bg: #ffffff;
+  --text-color-form: #000000;
 
   --body-font: 'Roboto', sans-serif;
 }
@@ -96,7 +97,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
-  
+
   border-bottom: 1px solid var(--border-min);
   background: var(--background-card);
 }
@@ -208,6 +209,7 @@ header {
 .current {
   color: var(--current);
 }
+
 /* ----------------HEADER [FINISH]---------------- */
 
 .main {
@@ -262,6 +264,7 @@ header {
 .btn-order:focus {
   background-color: var(--active-btn);
 }
+
 /* ----------------SECTION-HEAD [FINISH] ---------------- */
 
 /* ----------------SECTION-ADVANTAGES [START]---------------- */
@@ -310,6 +313,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--description);
 }
+
 /* ----------------SECTION-ADVANTAGES [FINISH]---------------- */
 
 /* ----------------SECTION-ACTIVITY [START]---------------- */
@@ -350,6 +354,7 @@ header {
 .activity-item:not(:last-child) {
   margin-right: 30px;
 }
+
 /* ----------------SECTION-ACTIVITY [FINISH]---------------- */
 
 /* ----------------SECTION-TEAM [START]---------------- */
@@ -430,7 +435,7 @@ header {
   width: 44px;
   height: 44px;
   padding: 12px;
-  
+
   fill: var(--icon-social-light);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -450,6 +455,7 @@ header {
 .icon-social-item:focus {
   fill: var(--icon-social-hover-bg);
 }
+
 /* ----------------SECTION-TEAM [FINISH]---------------- */
 
 /* ----------------SECTION-CUSTOMERS [START]--------------------- */
@@ -504,6 +510,7 @@ customers-link:focus {
 .customers-link:focus {
   outline: 2px solid var(--current);
 }
+
 /* ----------------SECTION-CUSTOMERS [END]--------------------- */
 
 /* ----------------FOOTER [START]---------------- */
@@ -594,7 +601,7 @@ footer {
 
 .social-footer-icon {
   width: 20px;
-  
+
   fill: var(--text-heading);
 }
 
@@ -652,17 +659,17 @@ footer {
 }
 
 .footer-button {
+  width: 200px;
+  height: 50px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 28px;
+  margin-left: 12px;
 
   background-color: var(--btn-background);
   border: transparent;
   border-radius: 4px;
-  padding: 10px 28px;
-  margin-left: 12px;
-  width: 200px;
-  height: 50px;
 
   color: var(--text-heading);
   font-weight: 700;
@@ -672,9 +679,11 @@ footer {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-button:hover,
 .footer-button:focus {
   background-color: var(--active-btn);
@@ -682,13 +691,15 @@ footer {
 }
 
 .send-icon {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+
   fill: currentColor;
 }
+
 /* ----------------FOOTER [FINISH]---------------- */
 
 /* ----------------SECTION-PORTFOLIO [START]---------------- */
@@ -880,11 +891,11 @@ footer {
   height: 30px;
 
   background-color: var(--background-card);
-  fill: var(--black-color);
+  fill: var(--text-color-form);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  
+
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -900,6 +911,180 @@ footer {
 .close:hover {
   fill: var(--current);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+/* Form */
+.form {
+  width: 100%;
+  padding: 40px;
+}
+
+.form-title {
+  margin-bottom: 12px;
+  margin-top: 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--body-text-color);
+}
+
+.form-send {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-field {
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 11px 12px 11px 42px;
+
+  font-size: 16px;
+  color: var(--text-color-form);
+  background-color: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--btn-background);
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.comment-field {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--text-color-form);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-field::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.comment-field:hover,
+.comment-field:focus {
+  border-color: var(--btn-background);
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: var(--body-text-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover~.form-icon,
+.form-input:focus~.form-icon {
+  fill: var(--btn-background);
+}
+
+.form-field-terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--description);
+  fill: var(--text-heading);
+}
+
+.form-field-terms>a {
+  color: var(--btn-background);
+}
+
+.form-field-checkbox:checked~.icon-checkbox {
+  border: none;
+  background-color: var(--btn-background);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.icon-checkbox {
+  border: 1px solid var(--text-color-form);
+  border-radius: 2px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button {
+  width: 200px;
+  height: 50px;
+  padding: 10px 52px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--btn-background);
+  border: transparent;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--text-heading);
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------SECTION-MODAL [END]---------------- */
