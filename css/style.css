@@ -554,6 +554,7 @@ footer {
 
 .footer-social {
   margin-left: 70px;
+  margin-right: 93px;
 }
 
 .footer-heading {
@@ -595,6 +596,98 @@ footer {
   width: 20px;
   
   fill: var(--text-heading);
+}
+
+
+/* Foter subscription button */
+.footer-subscription-container {
+  width: 570px;
+}
+
+.subscription-title {
+  margin-bottom: 20px;
+  margin-top: 0;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-heading);
+}
+
+.send {
+  display: flex;
+}
+
+.send input {
+  width: 358px;
+  height: 50px;
+  margin: 0;
+  padding: 15px 16px;
+
+  color: var(--text-heading);
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send input:hover,
+.send input:focus {
+  outline: none;
+  border-color: var(--active-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.send input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--btn-background);
+  border: transparent;
+  border-radius: 4px;
+  padding: 10px 28px;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+
+  color: var(--text-heading);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button:hover,
+.footer-button:focus {
+  background-color: var(--active-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.send-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
 /* ----------------FOOTER [FINISH]---------------- */
 
