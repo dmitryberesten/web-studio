@@ -1,0 +1,47 @@
+.section-head {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 200px 0;
+
+    text-align: center;
+    background-color: $background-section;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        color: $text-heading;
+    }
+
+    &__btn-order {
+        margin-top: 30px;
+        padding: 10px 32px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $text-heading;
+        background-color: $btn-background;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: $active-btn;
+        }
+    }
+}
