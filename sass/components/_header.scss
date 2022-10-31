@@ -11,6 +11,7 @@ header {
 
 .header {
     display: flex;
+    align-items: center;
 }
 
 .nav {
@@ -80,7 +81,7 @@ header {
 
 .contacts {
     display: flex;
-    margin: 32px 0 32px auto;
+    margin-left: auto;
 
     &__link {
         font-weight: 500;
