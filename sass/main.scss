@@ -1,25 +1,21 @@
 @import "./utils/variables";
+// @import "./utils/swiper";
 @import "./components/body";
 @import "./components/container";
-@import "./components/header";
-@import "./components/section-head";
-@import "./components/section-advantages";
-@import "./components/section-activity";
-@import "./components/section-team";
-@import "./components/section-customers";
-@import "./components/section-portfolio";
-@import "./components/filter";
+@import "./components/section";
+@import "./components/menu";
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/contacts";
+@import "./components/contacts-page";
+@import "./components/hero";
+@import "./components/solution";
+@import "./components/work";
+@import "./components/team";
+@import "./components/social";
+@import "./components/clients";
 @import "./components/footer";
-@import "./components/subscription";
-@import "./components/modal";
-@import "./components/form";
-
-
-
-
-
-
-
-
-
-
+@import "./components/footer-form";
+@import "./components/modalform";
+@import "./components/portfolio-btn";
+@import "./components/cards";

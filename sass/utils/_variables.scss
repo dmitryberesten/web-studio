@@ -1,20 +1,49 @@
-$body-text-color: #212121;
-$logo-color: #000000;
-$logo-span-color: #2196f3;
-$current: #2196f3;
-$contacts-link: #757575;
-$background-section: #2f303a;
-$text-heading: #ffffff;
-$btn-background: #2196f3;
-$background-light: #f5f4fa;
-$description: #757575;
-$background-card: #ffffff;
-$opacity-text: rgba(255, 255, 255, 0.6);
-$active-btn: #188ce8;
-$border-min: #ececec;
-$icon-fill: #212121;
-$icon-social-light: #AFB1B8;
-$icon-social-hover: #2196F3;
-$icon-social-hover-bg: #ffffff;
-$text-color-form: #000000;
-$body-font: 'Roboto', sans-serif;
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$acent-color: #2196f3;
+$main-white-color: #ffffff;
+$hero-color: #2f303a;
+$section-comand: #f5f4fa;
+$border-color: #eeeeee;
+$lonely-button: #188ce8;
+$icon-color: #AFB1B8;
+$hero-bcg: #c4c4c4;
+$main-font: "Roboto", sans-serif;
+$secondary-font: "Raleway", sans-serif;
+$fw-normal: 400;
+$fw-500: 500;
+$fw-bold: 700;
+$fw-900: 900;
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-24: 24px;
+$fs-26: 26px;
+$fs-28: 28px;
+$fs-32: 32px;
+$fs-34: 34px;
+$fs-36: 36px;
+$fs-40: 40px;
+$fs-44: 44px;
+
+$breakpoints: (
+   'mobileBox': 450px,
+   'mobile': 480px,
+   'tabletBox': 738px,
+   'tablet': 768px,
+   'desktop': 1200px,
+);
+
+@mixin respond-from-min($breakpoint) {
+   @media screen and (min-width: getWidth($breakpoint)) {
+      @content;
+   }
+}
+
+@mixin respond-to-max($breakpoint) {
+   @media screen and (max-width: getWidth($breakpoint)) {
+      @content;
+   }
+}

@@ -1,0 +1,33 @@
+.section {
+   padding: 60px 0;
+   background-color: $main-white-color;
+
+   @media (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+   }
+
+   &__title {
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      font-weight: $fw-bold;
+      font-size: $fs-28;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+
+      color: $title-text-color;
+      text-align: center;
+
+      @media (min-width: 1200px) {
+         margin-bottom: 50px;
+
+         font-size: $fs-36;
+         line-height: 1.14;
+      }
+   }
+}
+
+.section-portfolio {
+   padding-top: 81px;
+}

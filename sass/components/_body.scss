@@ -1,32 +1,28 @@
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
 body {
-    font-family: $body-font;
-    color: $body-text-color;
+   font-family: $main-font;
+   font-style: normal;
+   font-weight: 400;
+   letter-spacing: 0.03em;
+   font-size: 14px;
+   line-height: 1.71;
+   color: $primary-text-color;
+   background-color: $main-white-color;
+
+   &.modal-open {
+      overflow: hidden;
+   }
 }
 
-button {
-    font-family: inherit;
-    cursor: pointer;
-}
-
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-
-address {
-    font-style: normal;
-}
-
-.list {
-    list-style-type: none;
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
 }
 
 h1,
@@ -34,30 +30,45 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    margin: 0;
-    padding: 0;
-}
-
+h6,
 p {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
+   margin: 0;
 }
 
 img {
-    display: block;
+   display: block;
+   max-width: 100%;
+   height: auto;
 }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.visually--hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(100%);
+   overflow: hidden;
 }
 
-.main {
-    padding-top: 84px;
+// Стилізація скролбару
+::-webkit-scrollbar {
+   width: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: $icon-color;
+   border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+   background-color: transparent;
+}
+
+.swiper {
+   width: 1170px;
+   height: 300px;
 }
