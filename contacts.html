@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./css/main.min.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+   <title>Контакти</title>
+</head>
+
+<body>
+   <!---Шапка сайту-->
+   <header class="header">
+      <div class="header__container container">
+         <a href="index.html" class="logo">
+            <span class="logo--accent">Web</span>Studio
+         </a>
+
+         <div class="menu js-menu-container">
+            <nav class="nav">
+               <ul class="site-nav">
+                  <li class="site-nav__item">
+                     <a href="index.html" class="site-nav__link ">Студія</a>
+                  </li>
+                  <li class="site-nav__item">
+                     <a href="portfolio.html" class="site-nav__link">Портфоліо</a>
+                  </li>
+                  <li class="site-nav__item">
+                     <a href="contacts.html" class="site-nav__link site-nav__link--current animate__animated animate__wobble">Контакти</a>
+                  </li>
+               </ul>
+            </nav>
+
+            <div class="menu-contacts">
+               <ul class="contacts">
+                  <li class="contacts__item">
+                     <a href="mailto:info@devstudio.com" class="contacts__link" aria-label="іконка">
+                        <svg class="contacts__mail contacts__icon" width="16" height="12">
+                           <use href="./images/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                  </li>
+                  <li class="contacts__item">
+                     <a href="tel:+380961111111" class="contacts__link" aria-label="іконка">
+                        <svg class="contacts__tel contacts__icon" width="10" height="16">
+                           <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>+38 096 111 11 11</a>
+                  </li>
+               </ul>
+
+               <!-- Social menu -->
+               <ul class="menu-social">
+                  <li class="menu-social__item">
+                     <a class="menu-social__link" href="./">Instagram</a>
+                  </li>
+                  <li class="menu-social__item">
+                     <a class="menu-social__link" href="./">Twitter</a>
+                  </li>
+                  <li class="menu-social__item">
+                     <a class="menu-social__link" href="./">Facebook</a>
+                  </li>
+                  <li class="menu-social__item">
+                     <a class="menu-social__link" href="./">Linkedin</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <button class="menu__button js-open-menu" data-menu-button type="button" aria-expanded="false">
+            <svg class="menu__icon" aria-label="Перемикач мобільного меню" width="40" height="40">
+               <use class="icon-cross" href="./images/icons/sprites.svg#cross"></use>
+               <use class="icon-burger" href="./images/icons/sprites.svg#burger"></use>
+            </svg>
+         </button>
+      </div>
+   </header>
+   <main>
+      <!--контент-->
+      <section class="section">
+         <div class="contacts-page container ">
+            <div class="contacts-page__section address__part container">
+                <div class="contacts-page__block">
+                   <a href="./index.html" class="footer__link"><span class="footer__logo">W</span><span class="contacts-page__logo">S</span></a>
+                   <address class="address">
+                      <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
+                         class="contacts-page__link--location">м. Київ, пр-т Лесі Українки, 26</a>
+                      <ul class="address__list">
+                         <li class="address__item">
+                            <a href="mailto:info@devstudio.com" class="contacts-page__link">info@devstudio.com</a>
+                         </li>
+                         <li class="address__item">
+                            <a href="tel:+380961111111" class="contacts-page__link">+38 096 111 11 11</a>
+                         </li>
+                      </ul>
+                   </address>
+                   <iframe class="contacts-page__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7794497406567!2d30.5383858!3d50.426580699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C70YzQstCw0YAg0JvQtdGB0ZYg0KPQutGA0LDRl9C90LrQuCwgMjYsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1667552057240!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+         </div>
+      </section>
+   </main>
+   <!-- Footer -->
+   <footer class="footer__section">
+
+      <!--Адреса-->
+      <div class="address__part container">
+         <div class="footer__block">
+            <a href="./index.html" class="footer__link"><span class="footer__logo">Web</span>Studio</a>
+            <address class="address">
+               <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
+                  class="address__link--location">м. Київ, пр-т Лесі Українки, 26</a>
+               <ul class="address__list">
+                  <li class="address__item">
+                     <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+                  </li>
+                  <li class="address__item">
+                     <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
+                  </li>
+               </ul>
+            </address>
+         </div>
+         <div class="footer">
+            <p class="footer__text">Приєднуйтесь</p>
+            <ul class="footer-social__list">
+               <li class="footer-social__item">
+                  <a class="footer-social__link" href="" aria-label="іконка">
+                     <svg class="footer-social__icon" width="20" height="20">
+                        <use href="./images/social-defs.svg#icon-insta"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="footer-social__item">
+                  <a class="footer-social__link" href="" aria-label="іконка">
+                     <svg class="footer-social__icon" width="20" height="20">
+                        <use href="./images/social-defs.svg#icon-twit"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="footer-social__item">
+                  <a class="footer-social__link" href="" aria-label="іконка">
+                     <svg class="footer-social__icon" width="20" height="20">
+                        <use href="./images/social-defs.svg#icon-face"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="footer-social__item">
+                  <a class="footer-social__link" href="" aria-label="іконка">
+                     <svg class="footer-social__icon" width="20" height="20">
+                        <use href="./images/social-defs.svg#icon-lkdl"></use>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
+
+         <!-- Footer-form -->
+         <form action="" class="footer-form">
+            <p class="footer__text">Підпишіться на розсилку</p>
+            <label class="footer-form__field">
+               <input type="text" placeholder="E-mail" class="footer-form__input" />
+               <a href="" class="footer-form__link" aria-label="іконка">
+                  Підписатися
+                  <svg class="footer-form__icon" width="24" height="24">
+                     <use href="./images/form-defs.svg#icon-icon_send"></use>
+                  </svg>
+               </a>
+            </label>
+         </form>
+      </div>
+   </footer>
+   <!-- Scripts -->
+   <script src="./js/modal.js"></script>
+   <script defer src="js/menu.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+</body>
+
+</html>

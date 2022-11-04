@@ -1,0 +1,29 @@
+.logo {
+   display: block;
+
+   font-family: $secondary-font;
+   font-weight: $fw-bold;
+   font-size: 24px;
+   line-height: 1.16;
+   text-decoration: none;
+   color: $title-text-color;
+
+   @media (min-width: 1200px) {
+      font-size: 24px;
+      line-height: 1.2;
+   }
+
+   &--accent {
+      color: $acent-color;
+   }
+
+   .header__container & {
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      @media (min-width: 768px) {
+         padding-top: 24px;
+         padding-bottom: 24px;
+      }
+   }
+}
