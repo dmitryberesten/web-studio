@@ -1360,7 +1360,7 @@ img {
   }
 }
 
-.modal-btn__exe {
+.modal-btn__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -1382,7 +1382,7 @@ img {
   border-radius: 100%;
   background-color: var(--main-white-color);
 }
-.modal-btn__exe:hover {
+.modal-btn__close:hover {
   cursor: pointer;
   fill: #188ce8;
 }
