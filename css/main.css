@@ -859,6 +859,11 @@ img {
   margin-right: auto;
   padding: 0;
 }
+@media (max-width: 480px) {
+  .team__list .team__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 
 .team__item {
   border-radius: 0px 0px 4px 4px;

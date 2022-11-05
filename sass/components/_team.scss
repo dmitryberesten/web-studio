@@ -11,12 +11,17 @@
    margin-left: auto;
    margin-right: auto;
    padding: 0;
+
+   @media (max-width: 480px) {
+      .team__list:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
+
 }
 
 
-.team__list:not(:last-child) {
-   // margin-bottom: 30px;
-}
+
 
 
 .team__item:not(:last-child) {
