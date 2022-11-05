@@ -854,26 +854,12 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 30px;
+  gap: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
 }
 
-.team__list:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.team__item:not(:last-child) {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-@media (max-width: 480px) {
-  .team__item:not(:last-child) {
-    margin-right: 0;
-  }
-}
 .team__item {
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
