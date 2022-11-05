@@ -854,6 +854,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
