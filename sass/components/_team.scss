@@ -13,7 +13,7 @@
    padding: 0;
 
    @media (max-width: 480px) {
-      .team__list:not(:last-child) {
+      &__list:not(:last-child) {
          margin-bottom: 30px;
       }
    }
