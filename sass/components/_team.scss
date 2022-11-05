@@ -17,6 +17,9 @@
 }
 
 
+.team__item:not(:last-child) {
+   margin-right: 30px;
+}
 
 .team__item {
    border-radius: 0px 0px 4px 4px;
@@ -29,6 +32,12 @@
 
    background-color: $main-white-color;
 
+   @media (max-width: 480px) {
+      .team__item:not(:last-child) {
+         margin-right: 0;
+      }
+   }
+
    @media (min-width: 768px) {
       width: calc((100% - 30px) / 2);
    }
@@ -38,9 +47,7 @@
    }
 }
 
-.team__item:not(:last-child) {
-   margin-right: 30px;
-}
+
 
 .team__container {
    padding-top: 30px;
