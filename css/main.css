@@ -869,6 +869,11 @@ img {
   text-align: center;
   background-color: #ffffff;
 }
+@media (max-width: 480px) {
+  .team__item {
+    width: calc((100% - 30px) / 1);
+  }
+}
 @media (min-width: 768px) {
   .team__item {
     width: calc((100% - 30px) / 2);

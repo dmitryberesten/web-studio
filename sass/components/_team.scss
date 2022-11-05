@@ -23,6 +23,10 @@
 
    background-color: $main-white-color;
 
+   @media (max-width: 480px) {
+      width: calc((100% - 30px) / 1);
+   }
+
    @media (min-width: 768px) {
       width: calc((100% - 30px) / 2);
    }
