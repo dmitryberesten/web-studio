@@ -5,7 +5,7 @@
 .team__list {
    display: flex;
    flex-wrap: wrap;
-   gap: 30px;
+   // gap: 30px;
 
    margin-left: auto;
    margin-right: auto;
@@ -23,9 +23,12 @@
 
    background-color: $main-white-color;
 
-   @media (max-width: 480px) {
-      margin-bottom: 30px;
-   }
+   // @media (max-width: 480px) {
+     
+   // }
+
+
+
 
    @media (min-width: 768px) {
       width: calc((100% - 30px) / 2);
@@ -34,6 +37,10 @@
    @media (min-width: 1200px) {
       width: calc((100% - 90px) / 4);
    }
+}
+
+.team__item:not(:last-child) {
+   margin-bottom: 30px;
 }
 
 .team__container {
