@@ -34,6 +34,27 @@
    transform: translate(-50%, -50%) scale(1);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+      @media (min-width: 400px) {
+      width: 100%;
+      max-width: 400px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+      transform: translate(-50%, -50%) scale(1);
+   }
+
+   @media (max-width: 420px) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+      min-width: 400px;
+      box-sizing: border-box;
+
+      transform: translate(-50%, -50%) scale(1);
+   }
+
    @media (min-width: 768px) {
       width: 100%;
       max-width: 450px;
@@ -49,7 +70,7 @@
       left: 50%;
       top: 50%;
 
-      min-width: 450px;
+      min-width: 400px;
       box-sizing: border-box;
 
       transform: translate(-50%, -50%) scale(1);
