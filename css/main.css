@@ -1321,7 +1321,7 @@ img {
 
 .modal {
   position: relative;
-  max-width: 400px;
+  max-width: 450px;
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -1352,7 +1352,7 @@ img {
     position: absolute;
     left: 50%;
     top: 50%;
-    min-width: 400px;
+    min-width: 450px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-transform: translate(-50%, -50%) scale(1);
