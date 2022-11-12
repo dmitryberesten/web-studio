@@ -11,3 +11,4 @@ Technical features:
 6. Animate.css
 7. Swiper.js
 8. AOS.js
+![image](https://user-images.githubusercontent.com/87872240/201488721-15d7f738-6ce8-4540-a607-07a3c5724596.png)
