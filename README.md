@@ -1,6 +1,7 @@
 Hello everybody! I want to present a web project that I developed during the courses. The website is responsive and displays well on: desktop, tablet, mobile phone.
 
-The link to the video presentation is here:
+The link to the video presentation is here: 
+https://youtu.be/McX7pJJg4Tw
 
 Technical features:
 1. Adaptive layout
